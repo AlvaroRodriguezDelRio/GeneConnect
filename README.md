@@ -46,13 +46,13 @@ __Formatting example for an orthology list including dashes for missing ortholog
  -	scaffold1170__83974__85481__mar_g9413.t1
  0020.scaffold00069__95506__96127__Bv_000570_pmqw.t1	scaffold1170__87426__88060__mar_g9414.t1
 
-Formatting example for an orthology list showing orthologs only:
+__Formatting example for an orthology list showing orthologs only:__
  0020.scaffold00069__34996__59920__Bv_000520_xuag.t1	scaffold1170__32936__58560__mar_g9410.t1
  0020.scaffold00069__69976__71790__Bv_000530_rsxf.t1	scaffold1170__63346__68792__mar_g9411.t1
  0020.scaffold00069__82096__92059__Bv_000550_zstx.t1	scaffold1170__73726__83471__mar_g9412.t1
  0020.scaffold00069__95506__96127__Bv_000570_pmqw.t1	scaffold1170__87426__88060__mar_g9414.t1
 
-Example for gene lists to show all genes of the scaffold (species 1):
+__Example for gene lists to show all genes of the scaffold (species 1):__
  0020.scaffold00069__1__4111__Bv_000500_kues.t1
  0020.scaffold00069__32216__33048__Bv_000510_ffys.t1
  0020.scaffold00069__34996__59920__Bv_000520_xuag.t1
@@ -61,7 +61,7 @@ Example for gene lists to show all genes of the scaffold (species 1):
  0020.scaffold00069__82096__92059__Bv_000550_zstx.t1
  0020.scaffold00069__95506__96127__Bv_000570_pmqw.t1
  
-Example for a gene list of species 2:
+__Example for a gene list of species 2:__
  scaffold1170__32936__58560__mar_g9410.t1
  scaffold1170__63346__68792__mar_g9411.t1
  scaffold1170__63346__68792__mar_g9411.t1
