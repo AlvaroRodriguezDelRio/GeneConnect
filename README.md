@@ -35,7 +35,7 @@ files will have the name of the reference scaffold (and extension ".png"), other
 The input may be either one ortholgy file only, or one orthology file plus two geneID files plus suffix string.
 If only an orthology file is provided, only the genes contained therein will be drawn.
 
-Formatting example for an orthology list including dashes for missing orthologs:
+__Formatting example for an orthology list including dashes for missing orthologs:__
  0020.scaffold00069__1__4111__Bv_000500_kues.t1	-
  0020.scaffold00069__32216__33048__Bv_000510_ffys.t1	-
  0020.scaffold00069__34996__59920__Bv_000520_xuag.t1	scaffold1170__32936__58560__mar_g9410.t1
