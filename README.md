@@ -73,4 +73,4 @@ Example for a gene list of species 2:
 
 ## Output
 
-
+![gene collinearity representation](images/syn.png)
