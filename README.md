@@ -4,9 +4,11 @@ Script designed for visually represent syntenic regions between two homolog regi
 
 ![gene collinearity representation](images/syn.png)
 
+*Example output of geneConnect*
+
 The script ma be used for generating whole genome images by taking each scaffold separatelly (see http://bvseq.boku.ac.at/Genome/Download/Bpat/Synteny/)
 
-## Usage
+__ Usage __
 
 For running Gene_connect, you just need to execute:
 
