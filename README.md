@@ -8,7 +8,7 @@ Script designed for visually represent syntenic regions between two homolog regi
 
 The script ma be used for generating whole genome images by taking each scaffold separatelly (see http://bvseq.boku.ac.at/Genome/Download/Bpat/Synteny/)
 
-__ Usage __
+__Usage__
 
 For running Gene_connect, you just need to execute:
 
@@ -85,4 +85,4 @@ __Example for a gene list of species 2:__
  scaffold1170__83974__85481__mar_g9413.t1
  scaffold1170__87426__88060__mar_g9414.t1
 ```
-# paralelize -> juliane command
+__paralelize -> juliane command__
