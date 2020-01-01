@@ -6,8 +6,6 @@ Script designed for visually represent syntenic regions between two genomic homo
 
 *Example output of geneConnect*
 
-The script may be used for generating whole genome images by taking each scaffold separatelly (see http://bvseq.boku.ac.at/Genome/Download/Bpat/Synteny/)
-
 __Usage__
 
 For running Gene_connect, you just need to execute:
@@ -82,3 +80,5 @@ files will have the name of the reference scaffold (and extension ".png"), other
 
 The input may be either one ortholgy file only, or one orthology file plus two geneID files plus suffix string.
 If only an orthology file is provided, only the genes contained therein will be drawn.
+
+The script may be used for generating whole genome images by taking each scaffold separatelly (see http://bvseq.boku.ac.at/Genome/Download/Bpat/Synteny/)
