@@ -27,15 +27,6 @@ ScaffoldName__StartPosition__EndPosition__GeneName
 
 Note the double-underscore characters, there should not be another double-underscore in the Scaffold name or gene name.
 
-__Formatting example for an orthology list:__
-
-```
- 0020.scaffold00069__34996__59920__Bv_000520_xuag.t1	scaffold1170__32936__58560__mar_g9410.t1
- 0020.scaffold00069__69976__71790__Bv_000530_rsxf.t1	scaffold1170__63346__68792__mar_g9411.t1
- 0020.scaffold00069__82096__92059__Bv_000550_zstx.t1	scaffold1170__73726__83471__mar_g9412.t1
- 0020.scaffold00069__95506__96127__Bv_000570_pmqw.t1	scaffold1170__87426__88060__mar_g9414.t1
-```
-
 If a gene does not have an ortholog, a "-" may appear in the other column. Whenenver this happens, the gene will appear colored in black and with no conection to any other gene.
 
 __Formatting example for an orthology list including dashes for missing orthologs:__
@@ -54,6 +45,16 @@ __Formatting example for an orthology list including dashes for missing ortholog
 
 Alternatively, two additional files may be provided that contain the complete lists of geneIDs in the respective
 scaffolds of each of the two species in one column. The orthology list as well as the additional geneID lists will be sorted by the script, i.e. they do not need to be sorted initially. If there is a gene in the gene list which does not appear in the orthology list, it will be represented without orthology relations (as if it appeared in the orthology file combined with a "-")
+
+
+__Formatting example for an orthology list:__
+
+```
+ 0020.scaffold00069__34996__59920__Bv_000520_xuag.t1	scaffold1170__32936__58560__mar_g9410.t1
+ 0020.scaffold00069__69976__71790__Bv_000530_rsxf.t1	scaffold1170__63346__68792__mar_g9411.t1
+ 0020.scaffold00069__82096__92059__Bv_000550_zstx.t1	scaffold1170__73726__83471__mar_g9412.t1
+ 0020.scaffold00069__95506__96127__Bv_000570_pmqw.t1	scaffold1170__87426__88060__mar_g9414.t1
+```
 
 __Example for gene lists to show all genes of the scaffold (species 1):__
 ```
