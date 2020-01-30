@@ -161,7 +161,6 @@ print $out $img->png;
 # orthologs have the same color.
 # if a non reference gene has more than one ortholog in the reference scaffold,
 # this database will contain all the colors of the orthologs.
-
 sub create_dataBase_geneRef_color{
   my @file=@_;
 
@@ -194,7 +193,6 @@ sub create_dataBase_geneRef_color{
 
 
 #sub to order NR scaffolds so that they appear ordered in the image
-
 sub get_order_NR_scaff{
   my @file = @_;
   my $prevScaffNR;
@@ -223,7 +221,6 @@ sub get_order_NR_scaff{
 }
 
 #draws the scale line for the reference scaffold
-
 sub draw_guide_lines{
   my $scaffold=$_[0];
   my $length=get_scaffold_length($scaffold);
@@ -247,7 +244,6 @@ sub draw_guide_lines{
 
 # draws the scaffold, this subroutine also calls the draw_gene
 # sobroutine for representing the genes in the scaffolds
-
 sub draw_scaffold{
   my ($scaffold,$x1,$x2,$y1,$y2,$link)=@_;
   my $finish=get_scaffold_length($scaffold);
@@ -263,7 +259,6 @@ sub draw_scaffold{
 }
 
 # creation of a Database $DB_NRscaffolds_genes{scaffold}[geneNoRef];
-
 sub create_ortholog_scaffold_DB{
   my @orthologGenes=@_;
   my @U=uniq(@orthologGenes);#remove repeated genes
@@ -276,11 +271,7 @@ sub create_ortholog_scaffold_DB{
 }
 
 #creation of database scaffolds{scaff}[gene] including ref and noRef scaffolds
-
 sub create_scaffold_DB_from_connections_file{
-  #my $fileName=$_[0];
-  #open(INFILE,"<",$fileName) || die "# cannot read $fileName";
-  #while(my $line = <INFILE>){
   foreach $line (@orthology)
   {
     my @line = split(/\s/,$line);
@@ -313,7 +304,6 @@ sub create_scaffold_DB_from_geneIDlist{
 }
 
 #creation of a database DBORtholog{geneNoRef}[....genesRef]
-
 sub create_DBOrthologs{
   @orthologGenes=();
   my @file=@_;
@@ -357,7 +347,6 @@ sub link_orthologs{
 }
 
 #opens the file with the name given and stores it in a vector
-
 sub open_file{
   my $fileName=$_[0];
   open (IN,$fileName);
@@ -370,7 +359,6 @@ sub open_file{
 }
 
 #gets a gene and extract the corresponding piece of information, specified by the second parameter
-
 sub extract_info{
   my ($line,$option)=@_;
   $line=~/([^\s]*)\s+([^\s]*)/;
@@ -387,7 +375,6 @@ sub extract_info{
 }
 
 #draws the rectangle representing a scaffold
-
 sub draw_big_rectangle{
   my ($scaffold,$x1,$x2,$y1,$y2)=@_;
   $img->bgcolor(undef);
@@ -405,11 +392,9 @@ sub draw_big_rectangle{
 }
 
 # responsible for drawng genes in the scaffolds
-
 sub draw_gene{
   my ($gene,$scale,$x1,$x2,$y1,$y2,$link)=@_;
   my $geneID=get_info_gene($gene,"n");
-  #print "$gene\n";
   my $beginning=get_info_gene($gene,"b");
   my $end=get_info_gene($gene,"e");
   my $uppery=$y1+$beginning*$scale;
@@ -444,8 +429,7 @@ sub draw_gene{
   }
 }
 
-# gets gene information
-
+# gets gene informatio
 sub get_info_gene{
   my ($gene,$option)=@_;
   $gene=~/(.*)__(.*)__(.*)__(.*)/;
@@ -468,7 +452,6 @@ sub get_info_gene{
 }
 
 #calculates scaffold length by getting the last coordinate fo the last gene in the scaffold
-
 sub get_scaffold_length{
   my $scaffold=$_[0];
   my $defEnd = 0;
@@ -485,7 +468,6 @@ sub get_scaffold_length{
 
 
 #in case there are many scaffolds from the non reference species, the proportions can change
-
 sub get_proportions_orthologs_scaffolds{
   my $totalLen=0;
   foreach my $i(keys %DB_NRscaffolds_genes){
