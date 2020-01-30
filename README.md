@@ -10,7 +10,7 @@ The main input file of the program is a conection file with two columns separate
 orthologous gene ids of the query species, which may be in more than one scaffold. Each line represents a single gene orthology relation.
 
 ```
-perl draw_colinearity.pl -o orthology_list.txt [ -g1 refSpecies.geneIDs] [ -g2 querySpecies.geneIds] [ -n suffix]
+perl geneConnect.pl -o orthology_list.txt [ -g1 refSpecies.geneIDs] [ -g2 querySpecies.geneIds] [ -n suffix]
 ```
 
 - -o file        orthology file including one gene orthology relation per line
@@ -20,7 +20,7 @@ perl draw_colinearity.pl -o orthology_list.txt [ -g1 refSpecies.geneIDs] [ -g2 q
 
 Each gene must contain the scaffold name, coordinates in the scaffold (begining and end) and the gene name. Note that these fields must be separated by double-underscore characters, and will be internally sorted (they don't need to be ordered in the files)
 
-__Runnin gene_connect.pl only providing orthology file:__
+__Running gene_connect.pl only providing orthology file:__
 
 ```
 >cat orthology.txt
@@ -28,7 +28,7 @@ __Runnin gene_connect.pl only providing orthology file:__
 0020.scaffold00069__69976__71790__Bv_000530_rsxf.t1	scaffold1170__63346__68792__mar_g9411.t1
 0020.scaffold00069__82096__92059__Bv_000550_zstx.t1	scaffold1170__73726__83471__mar_g9412.t1
 0020.scaffold00069__95506__96127__Bv_000570_pmqw.t1	scaffold1170__87426__88060__mar_g9414.t1
->perl draw_colinearity.pl -o orthology_list.txt && display 0020.scaffold00069.no_gene_list.png
+>perl geneConnect.pl -o orthology_list.txt && display 0020.scaffold00069.no_gene_list.png
 Synteny image written to "0020.scaffold00069.no_gene_list.png".
 ```
 
@@ -39,7 +39,7 @@ Alternatively, two additional files may be provided that contain the complete li
 scaffolds of each of the two species in one column. The orthology list as well as the additional geneID lists will be sorted by the script, i.e. they do not need to be sorted initially. If there is a gene in the gene list which does not appear in the orthology list, it will be represented without orthology relations and colored in black.
 
 
-__Runnin gene_connect.pl providing gene lists for both scaffolds:__
+__Running geneConnect.pl providing gene lists for both scaffolds:__
 ```
 > cat genes_sp1.txt
 0020.scaffold00069__1__4111__Bv_000500_kues.t1
@@ -55,7 +55,7 @@ scaffold1170__63346__68792__mar_g9411.t1
 scaffold1170__69347__71875__mar_g9412.t1
 scaffold1170__73726__83471__mar_g9413.t1
 scaffold1170__87426__88060__mar_g9414.t1
-> perl draw_colinearity.pl -o orthology_list.txt -g1 genes_sp1.txt -g2 genes_sp2.txt -n gene_list && display 0020.scaffold00069.gene_list.png
+> perl geneConnect.pl -o orthology_list.txt -g1 genes_sp1.txt -g2 genes_sp2.txt -n gene_list && display 0020.scaffold00069.gene_list.png
 Synteny image written to "0020.scaffold00069.gene_list.png".
 ```
 
