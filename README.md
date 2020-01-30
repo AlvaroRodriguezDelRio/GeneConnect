@@ -63,3 +63,4 @@ Synteny image written to "0020.scaffold00069.gene_list.png".
 
 
 The script is prepared to generate whole genome synteny images automatically (see for instance http://bvseq.boku.ac.at/Genome/Download/Bpat/Synteny/). For doing so, just provide as input an orthology file containing all the orthology relations in the region of interest, regardless the number of reference scaffolds in which it appears (see http://bvseq.boku.ac.at/Genome/Download/Bpat/Synteny/RefBeet_Bpat.synteny.txt).
+
