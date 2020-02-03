@@ -40,7 +40,7 @@ scaffolds of each of the two species in one column. The orthology list as well a
 
 
 __Running geneConnect.pl providing gene lists for both scaffolds:__
-```
+```   
 > cat genes_sp1.txt
 0020.scaffold00069__1__4111__Bv_000500_kues.t1
 0020.scaffold00069__32216__33048__Bv_000510_ffys.t1
@@ -65,6 +65,6 @@ Synteny image written to "0020.scaffold00069.gene_list.png".
 The script is prepared to generate whole genome synteny images automatically (see for instance http://bvseq.boku.ac.at/Genome/Download/Bpat/Synteny/). For doing so, just provide as input an orthology file containing all the orthology relations in the region of interest, regardless the number of reference scaffolds in which it appears (see http://bvseq.boku.ac.at/Genome/Download/Bpat/Synteny/RefBeet_Bpat.synteny.txt).
 
 If you use GeneConnect for a published work, please cite:
-::
+
 Rodríguez del Río, Á., Minoche, A.E., Zwickl, N.F., Friedrich, A., Liedtke, S., Schmidt, T., Himmelbauer, H. and Dohm, J.C. (2019), Genomes of the wild beets Beta patula and Beta vulgaris ssp. maritima. Plant J, 99: 1242-1253. doi:10.1111/tpj.14413
 
