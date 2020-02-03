@@ -69,4 +69,9 @@ If you use GeneConnect for a published work, please cite:
 ::
 Rodríguez del Río, Á., Minoche, A.E., Zwickl, N.F., Friedrich, A., Liedtke, S., Schmidt, T., Himmelbauer, H. and Dohm, J.C. (2019), Genomes of the wild beets Beta patula and Beta vulgaris ssp. maritima. Plant J, 99: 1242-1253. doi:10.1111/tpj.14413
 
+::
+
+   Jaime Huerta-Cepas, François Serra and Peer Bork. "ETE 3: Reconstruction,
+   analysis and visualization of phylogenomic data."  Mol Biol Evol (2016) doi:
+   10.1093/molbev/msw046
 
