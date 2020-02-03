@@ -9,10 +9,10 @@ orthologous gene ids of the query species, which may be in more than one scaffol
 perl geneConnect.pl -o orthology_list.txt [ -g1 refSpecies.geneIDs] [ -g2 querySpecies.geneIds] [ -n suffix]
 ```
 
-- -o file        orthology file including one gene orthology relation per line
-- -g1 file       file contaning genes of the reference scaffold
-- -g2 file       file contaning genes of the query scaffold
-- -n             suffix to be included in the output name. If omitted the image files will have the name of the reference scaffold (and extension ".png"), otherwise "refScafName.suffix.png".
+- `-o file `       orthology file including one gene orthology relation per line
+- `-g1 file`       file contaning genes of the reference scaffold
+- `-g2 file`       file contaning genes of the query scaffold
+- `-n suffix`            suffix to be included in the output name. If omitted the image files will have the name of the reference scaffold (and extension ".png"), otherwise "refScafName.suffix.png".
 
 Each gene must contain the scaffold name, coordinates in the scaffold (begining and end) and the gene name. Note that these fields must be separated by double-underscore characters, and will be internally sorted (they don't need to be ordered in the files).
 
