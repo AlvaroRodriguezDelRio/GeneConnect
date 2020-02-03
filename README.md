@@ -66,8 +66,7 @@ The script is prepared to generate whole genome synteny images automatically (se
 
 If you use GeneConnect for a published work, please cite:
 
-```
+::
 Rodríguez del Río, Á., Minoche, A.E., Zwickl, N.F., Friedrich, A., Liedtke, S., Schmidt, T., Himmelbauer, H. and Dohm, J.C. (2019), Genomes of the wild beets Beta patula and Beta vulgaris ssp. maritima. Plant J, 99: 1242-1253. doi:10.1111/tpj.14413
-```
 
 
