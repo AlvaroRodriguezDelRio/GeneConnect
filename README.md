@@ -28,12 +28,12 @@ perl geneConnect.pl -o orthology_list.txt [ -g1 refSpecies.geneIDs] [ -g2 queryS
 Each gene must contain the scaffold name, coordinates in the scaffold (begining and end) and the gene name. Note that these fields must be separated by double-underscore characters, and will be internally sorted (they don't need to be ordered in the files).
 
 ```
->cat orthology.txt
+>cat orthology_list.txt
 0020.scaffold00069__34996__59920__Bv_000520_xuag.t1	scaffold1170__32936__58560__mar_g9410.t1
 0020.scaffold00069__69976__71790__Bv_000530_rsxf.t1	scaffold1170__63346__68792__mar_g9411.t1
 0020.scaffold00069__82096__92059__Bv_000550_zstx.t1	scaffold1170__73726__83471__mar_g9412.t1
 0020.scaffold00069__95506__96127__Bv_000570_pmqw.t1	scaffold1170__87426__88060__mar_g9414.t1
->perl geneConnect.pl -o orthology_list.txt && display 0020.scaffold00069.no_gene_list.png
+>perl GeneConnect.pl -o orthology_list.txt -n no_gene_list && display 0020.scaffold00069.no_gene_list.png
 Synteny image written to "0020.scaffold00069.no_gene_list.png".
 ```
 
@@ -58,7 +58,7 @@ scaffold1170__63346__68792__mar_g9411.t1
 scaffold1170__69347__71875__mar_g9412.t1
 scaffold1170__73726__83471__mar_g9413.t1
 scaffold1170__87426__88060__mar_g9414.t1
-> perl geneConnect.pl -o orthology_list.txt -g1 genes_sp1.txt -g2 genes_sp2.txt -n gene_list && display 0020.scaffold00069.gene_list.png
+> perl GeneConnect.pl -o orthology_list.txt -g1 genes_sp1.txt -g2 genes_sp2.txt -n gene_list && display 0020.scaffold00069.gene_list.png
 Synteny image written to "0020.scaffold00069.gene_list.png".
 ```
 
