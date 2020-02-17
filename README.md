@@ -27,8 +27,6 @@ perl geneConnect.pl -o orthology_list.txt [ -g1 refSpecies.geneIDs] [ -g2 queryS
 
 Each gene must contain the scaffold name, coordinates in the scaffold (begining and end) and the gene name. Note that these fields must be separated by double-underscore characters, and will be internally sorted (they don't need to be ordered in the files).
 
-__Running gene_connect.pl only providing orthology file:__
-
 ```
 >cat orthology.txt
 0020.scaffold00069__34996__59920__Bv_000520_xuag.t1	scaffold1170__32936__58560__mar_g9410.t1
@@ -41,11 +39,10 @@ Synteny image written to "0020.scaffold00069.no_gene_list.png".
 
 <img src="images/0020.scaffold00069.no_gene_list.png" width="70%">
 
-Alternatively, two additional files may be provided that contain the complete lists of geneIDs in the respective
-scaffolds of each of the two species in one column. The orthology list as well as the additional geneID lists will be sorted by the script, i.e. they do not need to be sorted initially. If there is a gene in the gene list which does not appear in the orthology list, it will be represented without orthology relations and colored in black.
+Alternatively, two additional files containing the complete lists of geneIDs in the respective
+scaffolds of each of the two species in one column may be provided. The orthology list as well as the additional geneID lists will be sorted by the script, i.e. they do not need to be sorted initially. If there is a gene in the gene list which does not appear in the orthology list, it will be represented without orthology relations and colored in black.
 
 
-__Running geneConnect.pl providing gene lists for both scaffolds:__
 ```   
 > cat genes_sp1.txt
 0020.scaffold00069__1__4111__Bv_000500_kues.t1
@@ -67,7 +64,7 @@ Synteny image written to "0020.scaffold00069.gene_list.png".
 
 <img src="images/0020.scaffold00069.gene_list.png" width="70%">
 
-The script is prepared to generate whole genome synteny images automatically (see for instance http://bvseq.boku.ac.at/Genome/Download/Bpat/Synteny/). For doing so, just provide as input an orthology file containing all the orthology relations in the region of interest, regardless the number of reference scaffolds in which it appears (see http://bvseq.boku.ac.at/Genome/Download/Bpat/Synteny/RefBeet_Bpat.synteny.txt).
+The script is prepared to generate whole genome synteny images automatically (see for instance http://bvseq.boku.ac.at/Genome/Download/Bpat/Synteny/). For doing so, just provide as input an orthology file containing all the orthology relations in the region of interest, regardless the number of reference scaffolds in which it appears (for instance, http://bvseq.boku.ac.at/Genome/Download/Bpat/Synteny/RefBeet_Bpat.synteny.txt was used for generating all the synteny images between the Beta patula and the Beta vulgaris genomes).
 
 
 
