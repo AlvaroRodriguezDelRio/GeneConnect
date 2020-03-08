@@ -1,5 +1,5 @@
 #!/bin/perl
-# 2018
+# 2020
 # Alvaro Rodriguez del Rio (main code) and Juliane C. Dohm (some polishing)
 #
 # Script designed for visually represent syntenic regions based on orthology relations between
