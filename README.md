@@ -20,6 +20,8 @@ The main input file of the program is a conection file with two columns separate
 orthologous gene ids of the query species, which may be in more than one scaffold. Each line represents a single gene orthology relation.
 
 
+
+
 ```
 perl GeneConnect.pl -o orthology_list.txt [ -g1 refSpecies.geneIDs] [ -g2 querySpecies.geneIds] [ -n suffix]
 ```
