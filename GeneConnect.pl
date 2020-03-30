@@ -6,8 +6,6 @@
 # genes in a single reference scaffold of one species and orthologous genes of another species
 # which may appear in multiple scaffolds.
 
-################################################################
-
 use GD::Simple;
 use GD;
 use List::MoreUtils qw(uniq);
