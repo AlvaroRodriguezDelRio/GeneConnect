@@ -15,6 +15,7 @@ If you use GeneConnect for a published work, please cite:
 ###  Usage
 
 
+
 The main input file of the program is a conection file with two columns separated by a space or tab. The first column contains the ids of the genes of the reference scaffold(s). The second column contains
 orthologous gene ids of the query species, which may be in more than one scaffold. Each line represents a single gene orthology relation.
 
