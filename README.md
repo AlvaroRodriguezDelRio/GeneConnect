@@ -11,6 +11,7 @@ If you use GeneConnect for a published work, please cite:
 [Rodríguez del Río, Á., Minoche, A.E., Zwickl, N.F., Friedrich, A., Liedtke, S., Schmidt, T., Himmelbauer, H. and Dohm, J.C. (2019), Genomes of the wild beets Beta patula and Beta vulgaris ssp. maritima. Plant J, 99: 1242-1253. doi:10.1111/tpj.14413](https://onlinelibrary.wiley.com/doi/full/10.1111/tpj.14413)
 
 
+
 ###  Usage
 
 The main input file of the program is a conection file with two columns separated by a space or tab. The first column contains the ids of the genes of the reference scaffold(s). The second column contains
